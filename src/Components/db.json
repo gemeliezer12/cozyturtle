@@ -47,7 +47,7 @@
         "doc": {
             "name": "Chat App",
             "description": "A 3-column Realtime Chat App built with React and Firebase",
-            "details": "",
+            "details": "A work-in-progress 3-column chat app built with React, CSS and Firebase",
             "link": "",
             "link_name": "chat-app",
             "code": "",
@@ -68,7 +68,7 @@
         "doc": {
             "name": "Twitter Clone",
             "description": "A full-stack social media website built with JavaScript/JQuery, PHP, MySQL and AJAX",
-            "details": "",
+            "details": "A full-stack social media website built with JavaScript/JQuery, PHP, MySQL and AJAX.",
             "link": "",
             "link_name": "twitter-clone",
             "code": "",
