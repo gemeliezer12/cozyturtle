@@ -28,59 +28,61 @@ const Project = () => {
     console.log(currentProject.project.link, currentProject.project.code)
 
     return (
-        <div className="padding-y-40 padding-x-32 HPNXA06qJ7">
-            <div>
-                <p className="fs-40 ff-cubano text-center">{currentProject.project.name}</p>
-            </div>
-            <div className="padding-top-32"/>
-            <ImageSlider images={currentProject.project.image_slider}/>
-            <div className="padding-top-32">
-                {currentProject.project.link ?
-                    <div className="flex gap-10">
-                        {currentProject.project.link ?
-                        <a href={currentProject.project.link} target="_blank" className="solid-btn ut7pmfjxxd" style={{
-                            backgroundColor: "var(--indigo)"
-                        }}>
-                            <p>Visit</p>
-                        </a>
-                        :
-                        ""
-                        }
-                        {currentProject.project.code ?
-                        <a href={currentProject.project.code} target="_blank" className="solid-btn ut7pmfjxxd" style={{
-                            backgroundColor: "var(--rose)"
-                        }}>
-                            <p>Code</p>
-                        </a>
-                        :
-                        ""
-                        }
-                    </div>
-                : ""}
-                <div className="padding-top-20"/>
+        <div className="justify-center">
+            <div className="padding-y-40 padding-x-32 HPNXA06qJ7">
                 <div>
-                    <p className="ff-cubano fs-32">About This project</p>
-                    <p>
-                        {currentProject.project.details}
-                    </p>
+                    <p className="fs-40 ff-cubano text-center">{currentProject.project.name}</p>
                 </div>
-                <div className="padding-top-20">
-                    <p className="ff-cubano fs-32">Tech Stack</p>
-                    <ul className="column">
-                        {currentProject.project.categories.map((tag, index) => (
-                            <li key={index} className="row inline-flex align-center gap-10">
-                                <div className="margin-x-10" style={{
-                                    backgroundColor: "var(--text-color-1)",
-                                    height: "4px",
-                                    width: "4px",
-                                    borderRadius: "20px"
-                                }}></div>
-                                <p>
-                                    {tag}
-                                </p>
-                            </li>
-                        ))}
-                    </ul>
+                <div className="padding-top-32"/>
+                <ImageSlider images={currentProject.project.image_slider}/>
+                <div className="padding-top-32">
+                    {currentProject.project.link ?
+                        <div className="flex gap-10">
+                            {currentProject.project.link ?
+                            <a href={currentProject.project.link} target="_blank" className="solid-btn ut7pmfjxxd" style={{
+                                backgroundColor: "var(--indigo)"
+                            }}>
+                                <p>Visit</p>
+                            </a>
+                            :
+                            ""
+                            }
+                            {currentProject.project.code ?
+                            <a href={currentProject.project.code} target="_blank" className="solid-btn ut7pmfjxxd" style={{
+                                backgroundColor: "var(--rose)"
+                            }}>
+                                <p>Code</p>
+                            </a>
+                            :
+                            ""
+                            }
+                        </div>
+                    : ""}
+                    <div className="padding-top-20"/>
+                    <div>
+                        <p className="ff-cubano fs-32">About This project</p>
+                        <p>
+                            {currentProject.project.details}
+                        </p>
+                    </div>
+                    <div className="padding-top-20">
+                        <p className="ff-cubano fs-32">Tech Stack</p>
+                        <ul className="column">
+                            {currentProject.project.categories.map((tag, index) => (
+                                <li key={index} className="row inline-flex align-center gap-10">
+                                    <div className="margin-x-10" style={{
+                                        backgroundColor: "var(--text-color-1)",
+                                        height: "4px",
+                                        width: "4px",
+                                        borderRadius: "20px"
+                                    }}></div>
+                                    <p>
+                                        {tag}
+                                    </p>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
