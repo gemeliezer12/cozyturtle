@@ -13,7 +13,7 @@ const TopNav = () => {
                     <div className="img-40">
                         <img src="../../images/logo.png" alt="" />
                     </div>
-                    <p className="ff-cubano fs-26">
+                    <p className="ff-titan-one fs-26">
                         CozyTurtle
                     </p>
                 </div>

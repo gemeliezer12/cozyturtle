@@ -8,7 +8,7 @@ const Main = () => {
                 color: "white"
             }}>
                 <div className="column padding-x-32 padding-top-80 gap-20 HPNXA06qJ7">
-                    <p className="ff-cubano fs-32">
+                    <p className="ff-titan-one fs-32">
                         Hi, I'm Gem Eliezer...
                     </p>
                     <p className="fs-20">

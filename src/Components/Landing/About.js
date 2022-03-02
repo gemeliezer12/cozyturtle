@@ -7,7 +7,7 @@ const About = () => {
         }}>
             <div className="column gap-10">
                 <div>
-                    <p className="ff-cubano fs-32">About me</p>
+                    <p className="ff-titan-one fs-32">About me</p>
                 </div>
                 <div>
                     <p>
@@ -17,7 +17,7 @@ const About = () => {
             </div>
             <div className="column gap-10">
                 <div>
-                    <p className="ff-cubano fs-32">Skills</p>
+                    <p className="ff-titan-one fs-32">Skills</p>
                 </div>
                 <div className="row gap-6" style={{
                     flexWrap: "wrap"

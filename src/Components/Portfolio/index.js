@@ -51,7 +51,7 @@ const Index = () => {
             <div className="justify-center">
                 <div className="padding-x-32 light padding-y-60 HPNXA06qJ7">
                     <div>
-                        <p className="fs-32 ff-cubano">
+                        <p className="fs-32 ff-titan-one">
                             Projects
                         </p>
                     </div>

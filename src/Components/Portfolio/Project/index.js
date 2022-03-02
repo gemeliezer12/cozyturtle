@@ -31,7 +31,7 @@ const Project = () => {
         <div className="justify-center">
             <div className="padding-y-40 padding-x-32 HPNXA06qJ7">
                 <div>
-                    <p className="fs-40 ff-cubano text-center">{currentProject.project.name}</p>
+                    <p className="fs-40 ff-titan-one text-center">{currentProject.project.name}</p>
                 </div>
                 <div className="padding-top-32"/>
                 <ImageSlider images={currentProject.project.image_slider}/>
@@ -60,13 +60,13 @@ const Project = () => {
                     : ""}
                     <div className="padding-top-20"/>
                     <div>
-                        <p className="ff-cubano fs-32">About This project</p>
+                        <p className="ff-titan-one fs-32">About This project</p>
                         <p>
                             {currentProject.project.details}
                         </p>
                     </div>
                     <div className="padding-top-20">
-                        <p className="ff-cubano fs-32">Tech Stack</p>
+                        <p className="ff-titan-one fs-32">Tech Stack</p>
                         <ul className="column">
                             {currentProject.project.categories.map((tag, index) => (
                                 <li key={index} className="row inline-flex align-center gap-10">

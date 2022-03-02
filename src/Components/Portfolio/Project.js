@@ -17,7 +17,7 @@ const Project = ({project, projectId}) => {
                 }} src={`images/${project.thumbnail}`} alt=""/>
             </div>
             <div>
-                <p className="ff-cubano fs-26">{project.name}</p>
+                <p className="ff-titan-one fs-26">{project.name}</p>
             </div>
             <div>
                 <p>{project.description}</p>

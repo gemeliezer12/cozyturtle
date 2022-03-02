@@ -602,7 +602,7 @@ img {
   justify-content: center;
   color: white;
   border-radius: inherit;
-  font-family: "attribute-mono", sans-serif;
+  font-family: "inconsolata", sans-serif;
   font-weight: 700;
 }
 
@@ -635,7 +635,7 @@ img {
   color: white;
   border-radius: 50%;
   z-index: 110;
-  font-family: "attribute-mono", sans-serif;
+  font-family: "inconsolata", sans-serif;
 }
 
 .badge-10-absolute div,
@@ -659,7 +659,7 @@ img {
 
 .triangle-label * {
   color: var(--text-color-2);
-  font-family: "attribute-mono";
+  font-family: "inconsolata";
 }
 
 .triangle {

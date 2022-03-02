@@ -72,7 +72,7 @@ const Projects = () => {
                 </div>
                 <div>
                     <div>
-                        <p className="fs-32 ff-cubano">Project</p>
+                        <p className="fs-32 ff-titan-one">Project</p>
                     </div>
                     <div>
                         <p>

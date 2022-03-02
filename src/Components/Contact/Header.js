@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <div className="column gap-10">
             <div>
-                <p className="ff-cubano fs-32">Get in touch</p>
+                <p className="ff-titan-one fs-32">Get in touch</p>
             </div>
             <div>
                 <p>

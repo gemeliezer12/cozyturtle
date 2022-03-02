@@ -24,7 +24,7 @@ const Contact = () => {
             }}>
                 <div className="HPNXA06qJ7">
                     <div className="column padding-x-32 padding-bottom-40 gap-20">
-                        <p className="ff-cubano fs-32">
+                        <p className="ff-titan-one fs-32">
                         Get in touch...
                         </p>
                         <p className="fs-20">
