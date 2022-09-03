@@ -1,92 +1,25 @@
 [
     {
         "doc": {
-            "name": "CozyTurtle",
-            "description": "Built a personal portfolio with inspired by fireship.io and Discord's landing page",
-            "details": "A personal portfolio built with React. With design inspired by fireship.io and discord's landing page. Added a filter for the projects. ",
-            "link": "https://cozyturtle.netlify.app/",
-            "link_name": "cozyturtle",
-            "code": "https://github.com/gemeliezer12/cozyturtle",
+            "name": "Barangay Inhabitant Managment",
+            "description": "A website for Users to manage Barangay Inhabitants.",
+            "details": "Worked as a Full Stack Developer. Creating and Maintaining a website for Users to manage Barangay Inhabitants. Taking care of the Frontend, Backend, API and Database.",
+            "link_name": "barangay_Inhabitant_managment",
             "categories": [
-                "React",
-                "JavaScript",
-                "CSS",
-                "HTML"
+                "React/Next JS",
+                "Node JS/Express",
+                "PosgreSQL/Sequeelize",
+                "Git/Bitbucket",
+                "Docker"
             ],
             "image_slider": [
-                "cozy-turtle.png",
-                "cozy-turtle-1.png"
+                "download1.png",
+                "download2.png",
+                "download3.png",
+                "download4.png"
             ],
-            "thumbnail": "cozy-turtle.png"
+            "thumbnail": "download1.png"
         },
         "id": 1
-    },
-    {
-        "doc": {
-            "name": "Old Portfolio",
-            "description": "Built a personal portfolio with inspired by fireship.io",
-            "details": "A personal portfolio built with React. With design inspired by fireship.io",
-            "link": "https://cozyturtle.netlify.app/",
-            "link_name": "old-portfolio",
-            "code": "https://github.com/gemeliezer12/cozyturtle",
-            "categories": [
-                "React",
-                "JavaScript",
-                "CSS",
-                "HTML"
-            ],
-            "image_slider": [
-                "old-portfolio.png",
-                "old-portfolio-1.png"
-            ],
-            "thumbnail": "old-portfolio.png"
-        },
-        "id": 2
-    },
-    {
-        "doc": {
-            "name": "Chat App",
-            "description": "A 3-column Realtime Chat App built with React and Firebase",
-            "details": "A work-in-progress 3-column chat app built with React, CSS and Firebase",
-            "link": "",
-            "link_name": "chat-app",
-            "code": "",
-            "categories": [
-                "React",
-                "JavaScript",
-                "CSS",
-                "HTML"
-            ],
-            "image_slider": [
-                "chat-app.png"
-            ],
-            "thumbnail": "chat-app.png"
-        },
-        "id": 3
-    },
-    {
-        "doc": {
-            "name": "Twitter Clone",
-            "description": "A full-stack social media website built with JavaScript/JQuery, PHP, MySQL and AJAX",
-            "details": "A full-stack social media website built with JavaScript/JQuery, PHP, MySQL and AJAX.",
-            "link": "",
-            "link_name": "twitter-clone",
-            "code": "",
-            "categories": [
-                "PHP",
-                "MySQL",
-                "CSS",
-                "HTML",
-                "JavaScript"
-            ],
-            "image_slider": [
-                "twitter-clone.png",
-                "twitter-clone-1.png",
-                "twitter-clone-2.png"
-            ],
-            "thumbnail": "twitter-clone-1.png"
-        },
-        "id": 4
     }
-
 ]
