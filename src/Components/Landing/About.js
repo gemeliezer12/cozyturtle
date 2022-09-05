@@ -44,6 +44,14 @@ const About = () => {
               backgroundColor: "var(--indigo)",
             }}
           >
+            <p>Next JS</p>
+          </div>
+          <div
+            className="kvcdz3lpy3"
+            style={{
+              backgroundColor: "var(--indigo)",
+            }}
+          >
             <p>Node</p>
           </div>
           <div
@@ -52,23 +60,15 @@ const About = () => {
               backgroundColor: "var(--indigo)",
             }}
           >
+            <p>Express</p>
+          </div>
+          <div
+            className="kvcdz3lpy3"
+            style={{
+              backgroundColor: "var(--indigo)",
+            }}
+          >
             <p>JavaScript</p>
-          </div>
-          <div
-            className="kvcdz3lpy3"
-            style={{
-              backgroundColor: "var(--indigo)",
-            }}
-          >
-            <p>HTML</p>
-          </div>
-          <div
-            className="kvcdz3lpy3"
-            style={{
-              backgroundColor: "var(--indigo)",
-            }}
-          >
-            <p>CSS</p>
           </div>
           <div
             className="kvcdz3lpy3"
