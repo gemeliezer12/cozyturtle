@@ -1,7 +1,8 @@
 const Footer = () => {
     return (
         <div className="padding-x-32 dark padding-y-60 column align-center" style={{
-            backgroundColor: "var(--bg-color-2)"
+            backgroundColor: "var(--bg-color-2)",
+            height: "100%"
         }}>
             <div className="row align-center gap-4">
                 <p>Created with React <i className="fab fa-react" style={{

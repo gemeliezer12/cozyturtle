@@ -16,17 +16,25 @@ import "./styles/style.css";
 const App = () => {
   return (
     <ThemeProvider>
-      <TopNav />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route
-          path="/portfolio/:currentProjectLinkName"
-          element={<Project />}
-        />
-      </Routes>
-      <Footer />
+      <div style={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100vh",
+        width: "100vw",
+        overflow: "hidden"
+      }}>
+        <TopNav />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route
+            path="/portfolio/:currentProjectLinkName"
+            element={<Project />}
+          />
+        </Routes>
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 };
