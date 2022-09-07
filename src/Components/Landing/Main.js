@@ -32,9 +32,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-            <div className="width-100pc column align-center" style={{
-                width: "100%",
-            }}>
+            <div className="width-100pc column align-center">
                 <svg id="wave" style={{
                     height: "200px",
                     backgroundColor: "var(--indigo)",

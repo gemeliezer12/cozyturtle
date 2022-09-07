@@ -21,7 +21,8 @@ const App = () => {
         flexDirection: "column",
         height: "100vh",
         width: "100vw",
-        overflow: "hidden"
+        overflowY: "scroll",
+        overflowX: "hidden"
       }}>
         <TopNav />
         <Routes>
