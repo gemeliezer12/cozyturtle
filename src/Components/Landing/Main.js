@@ -34,7 +34,6 @@ const Main = () => {
             </div>
             <div className="width-100pc column align-center" style={{
                 width: "100%",
-                overflow: 'hidden',
             }}>
                 <svg id="wave" style={{
                     height: "200px",

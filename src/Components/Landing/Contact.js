@@ -3,10 +3,7 @@ import { Link } from "react-router-dom"
 const Contact = () => {
     return (
         <>
-            <div className="width-100pc column align-center light" style={{
-                width: "100%",
-                overflow: 'hidden',
-            }}>
+            <div className="width-100pc column align-center light">
                 <svg id="wave" style={{
                     height: "200px",
                     backgroundColor: "var(--bg-color-2)",
