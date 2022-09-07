@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 import ImageSlider from "../../Assets/ImageSlider";
 
@@ -7,6 +7,7 @@ const projectList = require("../../db.json");
 
 const Project = () => {
   const [currentProject, setCurrentProject] = useState();
+  const navigate = useNavigate();
 
   const { currentProjectLinkName } = useParams();
 
@@ -25,11 +26,31 @@ const Project = () => {
 
   if (!currentProject) return "";
 
-  console.log(currentProject.project.link, currentProject.project.code);
-
   return (
     <div className="justify-center">
       <div className="padding-y-40 padding-x-32 HPNXA06qJ7">
+        <div
+          class="dark"
+          onClick={() => navigate(-1)}
+          style={{
+            width: "40px",
+            height: "40px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "var(--indigo)",
+            borderRadius: "40px",
+            cursor: "pointer",
+          }}
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+            style={{
+              fontSize: "20px",
+              color: "var(--text-color-2)",
+            }}
+          ></i>
+        </div>
         <div>
           <p className="fs-40 ff-titan-one text-center">
             {currentProject.project.name}
@@ -38,7 +59,7 @@ const Project = () => {
         <div className="padding-top-32" />
         <ImageSlider images={currentProject.project.image_slider} />
         <div className="padding-top-32">
-          {currentProject.project.link ||  currentProject.project.code ? (
+          {currentProject.project.link || currentProject.project.code ? (
             <div className="flex gap-10">
               {currentProject.project.link ? (
                 <a

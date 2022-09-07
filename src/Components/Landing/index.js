@@ -1,13 +1,9 @@
-import { useTheme } from "../Contexts/ThemeContext"
-import Footer from "../Footer"
-import TopNav from "../TopNav"
 import About from "./About"
 import Contact from "./Contact"
 import Main from "./Main"
 import Projects from "./Projects"
 
 const Index = () => {
-    const { colorTheme } = useTheme()
 
     return (
         <>

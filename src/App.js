@@ -18,11 +18,10 @@ const App = () => {
     <ThemeProvider>
       <TopNav />
       <Routes>
-        <Route exact path="/" element={<Landing />} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/portfolio" element={<Portfolio />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route
-          exact
           path="/portfolio/:currentProjectLinkName"
           element={<Project />}
         />
