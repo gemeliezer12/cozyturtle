@@ -16,14 +16,16 @@ import "./styles/style.css";
 const App = () => {
   return (
     <ThemeProvider>
-      <div style={{
-        display: "flex",
-        flexDirection: "column",
-        height: "100vh",
-        width: "100vw",
-        overflowY: "scroll",
-        overflowX: "hidden"
-      }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          height: "100vh",
+          width: "100vw",
+          overflowY: "scroll",
+          overflowX: "hidden",
+        }}
+      >
         <TopNav />
         <Routes>
           <Route path="/" element={<Landing />} />

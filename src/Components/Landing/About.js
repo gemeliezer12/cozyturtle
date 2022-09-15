@@ -84,14 +84,6 @@ const About = () => {
               backgroundColor: "var(--indigo)",
             }}
           >
-            <p>Docker</p>
-          </div>
-          <div
-            className="kvcdz3lpy3"
-            style={{
-              backgroundColor: "var(--indigo)",
-            }}
-          >
             <p>Postgres</p>
           </div>
         </div>
