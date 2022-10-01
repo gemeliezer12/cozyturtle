@@ -384,6 +384,7 @@
   pointer-events: none;
   top: 0;
   padding-left: 4px;
+  transition: all 0.2s ease;
 }
 
 .input-label:focus-within label,

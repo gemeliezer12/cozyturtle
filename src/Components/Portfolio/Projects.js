@@ -2,7 +2,13 @@ import Project from "./Project";
 
 const Projects = ({ projects }) => {
   return (
-    <div className="gap-15 padding-top-40 Ykbot8gOoa">
+    <div
+      className="Ykbot8gOoa"
+      style={{
+        paddingTop: "40px",
+        gap: "15px",
+      }}
+    >
       {projects.map((project) => (
         <Project
           project={project.doc}

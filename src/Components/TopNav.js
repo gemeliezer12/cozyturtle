@@ -3,32 +3,58 @@ import { Link } from "react-router-dom";
 const TopNav = () => {
   return (
     <div
-      className="z-1 dark color-inherit column align-center"
+      className="dark"
       style={{
-        backgroundColor: "var(--indigo)",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        backgroundColor: "var(--base-color-indigo)",
         position: "sticky",
         top: "0",
-        color: "var(--text-color-2)",
+        zIndex: "1",
       }}
     >
       <div
-        className="width-100pc row padding-x-32 space-between align-center HPNXA06qJ7"
+        className="HPNXA06qJ7"
         style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "100%",
+          paddingLeft: "32px",
+          paddingRight: "32px",
           height: "70px",
         }}
       >
         <Link to={`/`}>
-          <div className="row gap-4 align-center">
-            <div className="img-40">
-              <img src="../../images/logo.png" alt="" />
-            </div>
-            <p className="ff-titan-one fs-26">CozyTurtle</p>
+          <div
+            style={{
+              display: "flex",
+              gap: "4px",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src="../../images/logo.png"
+              alt=""
+              style={{
+                height: "40px",
+              }}
+            />
+            <p
+              style={{
+                fontSize: "26px",
+                fontFamily: "Titan One",
+              }}
+            >
+              CozyTurtle
+            </p>
           </div>
         </Link>
         <i
-          className="fas fa-bars fs-32"
+          className="fas fa-bars"
           style={{
-            color: "var(--text-color-2)",
+            fontSize: "32px",
           }}
         ></i>
       </div>

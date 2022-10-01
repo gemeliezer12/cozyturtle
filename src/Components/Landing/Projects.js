@@ -2,38 +2,49 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div className="padding-x-32 padding-top-80 ggcYR7EQsk">
+    <div
+      className="ggcYR7EQsk"
+      style={{
+        paddingLeft: "32px",
+        paddingRight: "32px",
+        paddingTop: "80px",
+      }}
+    >
       <div
-        className="text-center"
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           width: "100%",
           gap: "2px",
+          textAlign: "center",
         }}
       >
         <div
           style={{
             background:
-              "linear-gradient(45deg, var(--blue) 0%, var(--indigo) 50%, var(--purple) 100%)",
+              "linear-gradient(45deg, var(--base-color-blue) 0%, var(--base-color-indigo) 50%, var(--base-color-purple) 100%)",
             padding: "2px",
             borderTopLeftRadius: "20px",
             overflow: "hidden",
           }}
         >
           <div
-            className="height-100pc width-100pc align-center justify-center"
             style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+              width: "100%",
               backgroundColor: "var(--bg-color-2)",
               borderTopLeftRadius: "20px",
             }}
           >
             <p
-              className="fw-900"
               style={{
                 background:
-                  "-webkit-linear-gradient(45deg, var(--blue) 0%, var(--indigo) 100%)",
+                  "-webkit-linear-gradient(45deg, var(--base-color-blue) 0%, var(--base-color-indigo) 100%)",
                 fontSize: "20px",
+                fontWeight: "900",
                 webkitBackgroundClip: "text",
                 webkitTextFillColor: "transparent",
               }}
@@ -48,6 +59,7 @@ const Projects = () => {
             aspectRatio: "16/9",
             borderTopRightRadius: "20px",
             overflow: "hidden",
+            transition: "all 0.2s ease",
           }}
         >
           <img
@@ -66,6 +78,7 @@ const Projects = () => {
             aspectRatio: "16/9",
             borderBottomLeftRadius: "20px",
             overflow: "hidden",
+            transition: "all 0.2s ease",
           }}
         >
           <img
@@ -83,27 +96,33 @@ const Projects = () => {
           className="mxr0Kms3m5"
           style={{
             background:
-              "linear-gradient(45deg, var(--blue) 0%, var(--indigo) 50%, var(--purple) 100%)",
+              "linear-gradient(45deg, var(--base-color-blue) 0%, var(--base-color-indigo) 50%, var(--base-color-purple) 100%)",
             padding: "2px",
             borderBottomRightRadius: "20px",
             overflow: "hidden",
+            transition: "all 0.2s ease",
           }}
         >
           <div
-            className="height-100pc width-100pc align-center justify-center"
             style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+              width: "100%",
               backgroundColor: "var(--bg-color-2)",
               borderBottomRightRadius: "20px",
             }}
           >
             <p
-              className="fw-900"
               style={{
                 background:
-                  "-webkit-linear-gradient(45deg, var(--blue) 0%, var(--indigo) 100%)",
+                  "-webkit-linear-gradient(45deg, var(--base-color-blue) 0%, var(--base-color-indigo) 100%)",
                 webkitBackgroundClip: "text",
                 webkitTextFillColor: "transparent",
                 fontSize: "20px",
+                fontWeight: "900",
               }}
             >
               Show More+
@@ -113,7 +132,14 @@ const Projects = () => {
       </div>
       <div>
         <div>
-          <p className="fs-32 ff-titan-one">Project</p>
+          <p
+            style={{
+              fontSize: "32px",
+              fontFamily: "Titan One",
+            }}
+          >
+            Project
+          </p>
         </div>
         <div>
           <p>

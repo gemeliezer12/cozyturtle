@@ -1,16 +1,31 @@
 const About = () => {
   return (
     <div
-      className="padding-x-32 twnB7Cz2Lp"
+      className="twnB7Cz2Lp"
       style={{
         display: "grid",
         gridTemplateColumns: "1fr 40%",
         gap: "20px",
+        paddingLeft: "32px",
+        paddingRight: "32px",
       }}
     >
-      <div className="column gap-10">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "10px",
+        }}
+      >
         <div>
-          <p className="ff-titan-one fs-32">About me</p>
+          <p
+            style={{
+              fontFamily: "Titan One",
+              fontSize: "32px",
+            }}
+          >
+            About me
+          </p>
         </div>
         <div>
           <p>
@@ -22,66 +37,123 @@ const About = () => {
       </div>
       <div className="column gap-10">
         <div>
-          <p className="ff-titan-one fs-32">Skills</p>
+          <p
+            className="ff-titan-one fs-32"
+            style={{
+              fontFamily: "Titan One",
+              fontSize: "32px",
+            }}
+          >
+            Skills
+          </p>
         </div>
         <div
-          className="row gap-6"
           style={{
+            display: "flex",
+            gap: "6px",
             flexWrap: "wrap",
           }}
         >
           <div
-            className="kvcdz3lpy3"
+            className="dark"
             style={{
-              backgroundColor: "var(--indigo)",
+              padding: "1px",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+              borderRadius: "4px",
+              fontWeight: "700",
+              backgroundColor: "var(--base-color-indigo)",
             }}
           >
             <p>React</p>
           </div>
           <div
-            className="kvcdz3lpy3"
+            className="dark"
             style={{
-              backgroundColor: "var(--indigo)",
+              padding: "1px",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+              borderRadius: "4px",
+              fontWeight: "700",
+              backgroundColor: "var(--base-color-indigo)",
             }}
           >
             <p>Next JS</p>
           </div>
           <div
-            className="kvcdz3lpy3"
+            className="dark"
             style={{
-              backgroundColor: "var(--indigo)",
+              padding: "1px",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+              borderRadius: "4px",
+              fontWeight: "700",
+              backgroundColor: "var(--base-color-indigo)",
             }}
           >
             <p>Node</p>
           </div>
           <div
-            className="kvcdz3lpy3"
+            className="dark"
             style={{
-              backgroundColor: "var(--indigo)",
+              padding: "1px",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+              borderRadius: "4px",
+              fontWeight: "700",
+              backgroundColor: "var(--base-color-indigo)",
             }}
           >
             <p>Express</p>
           </div>
           <div
-            className="kvcdz3lpy3"
+            className="dark"
             style={{
-              backgroundColor: "var(--indigo)",
+              padding: "1px",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+              borderRadius: "4px",
+              fontWeight: "700",
+              backgroundColor: "var(--base-color-indigo)",
             }}
           >
             <p>JavaScript</p>
           </div>
           <div
-            className="kvcdz3lpy3"
+            className="dark"
             style={{
-              backgroundColor: "var(--indigo)",
+              padding: "1px",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+              borderRadius: "4px",
+              fontWeight: "700",
+              backgroundColor: "var(--base-color-indigo)",
+            }}
+          >
+            <p>TypeScript</p>
+          </div>
+          <div
+            className="dark"
+            style={{
+              padding: "1px",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+              borderRadius: "4px",
+              fontWeight: "700",
+              backgroundColor: "var(--base-color-indigo)",
             }}
           >
             <p>Git</p>
           </div>
           <div
-            className="kvcdz3lpy3"
+            className="dark"
             style={{
-              backgroundColor: "var(--indigo)",
+              padding: "1px",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+              borderRadius: "4px",
+              fontWeight: "700",
+              backgroundColor: "var(--base-color-indigo)",
             }}
           >
             <p>Postgres</p>

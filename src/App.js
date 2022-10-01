@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 
-import { ThemeProvider } from "./Components/Contexts/ThemeContext";
+import { ThemeProvider } from "./Context/ThemeContext";
 
-import Landing from "./Components/Landing";
-import Contact from "./Components/Contact/";
-import Portfolio from "./Components/Portfolio";
-import Project from "./Components/Portfolio/Project/";
+import Landing from "./Pages/Landing";
+import Contact from "./Pages/Contact";
+import Portfolio from "./Pages/Portfolio";
+import Project from "./Pages/Portfolio/Project";
 import TopNav from "./Components/TopNav";
 import Footer from "./Components/Footer";
 
@@ -27,15 +27,23 @@ const App = () => {
         }}
       >
         <TopNav />
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route
-            path="/portfolio/:currentProjectLinkName"
-            element={<Project />}
-          />
-        </Routes>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            zIndex: "0",
+          }}
+        >
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route
+              path="/portfolio/:currentProjectLinkName"
+              element={<Project />}
+            />
+          </Routes>
+        </div>
         <Footer />
       </div>
     </ThemeProvider>

@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 const Project = ({ project, projectId }) => {
   return (
     <div
-      className="padding-all-15 column gap-10 space-between"
       style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        padding: "15px",
+        gap: "10px",
         backgroundColor: "var(--bg-color-4)",
         borderRadius: "10px",
         boxShadow: "0 0 6px -4px black",
@@ -26,16 +30,29 @@ const Project = ({ project, projectId }) => {
         />
       </div>
       <div>
-        <p className="ff-titan-one fs-26">{project.name}</p>
+        <p
+          style={{
+            fontFamily: "Titan One",
+            fontSize: "36px",
+          }}
+        >
+          {project.name}
+        </p>
       </div>
       <div>
         <p>{project.description}</p>
       </div>
       <Link
         to={`/portfolio/${project.link_name}`}
-        className="solid-btn"
+        className="dark"
         style={{
-          background: "var(--indigo)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "10px 25px",
+          borderRadius: "4px",
+          fontWeight: "900",
+          backgroundColor: "var(--base-color-indigo)",
         }}
       >
         <p>Visit</p>
