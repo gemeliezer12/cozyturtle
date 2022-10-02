@@ -42,7 +42,7 @@ const Form = ({ inputs, onChange, allInputIsValid, onSubmit }) => {
           </button>
         ) : (
           <button
-            className="solid-btn fs-14 disabled dark"
+            className="dark"
             style={{
               display: "flex",
               alignItems: "center",

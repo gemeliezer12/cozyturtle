@@ -1,0 +1,46 @@
+.inputLabel {
+  border-bottom: 2px solid var(--text-color-1);
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.inputLabel div {
+  position: relative;
+}
+
+.inputLabel input,
+.inputLabel textarea {
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 100%;
+  display: block;
+  transition: none;
+}
+
+.inputLabel textarea {
+  resize: none;
+  height: 26px;
+}
+
+.inputLabel label {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  padding-left: 4px;
+  transition: all 0.2s ease;
+}
+
+.inputLabel:focus-within label,
+.inputLabel.focus-within label {
+  font-size: 75%;
+  transform: translateY(-100%);
+}
+
+.inputLabel.valid {
+  border-color: var(--indigo);
+}
+
+.inputLabel.invalid {
+  border-color: var(--rose);
+}

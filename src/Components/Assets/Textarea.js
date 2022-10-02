@@ -1,19 +1,22 @@
 import TextareaAutosize from "react-textarea-autosize";
+import styles from "./Textarea.module.css";
 
 const Input = ({ input }) => {
   return (
     <div
-      className={`input-label ${input.value !== "" && "focus-within"} ${
-        input.value === "" ? "" : input.isValid ? "valid" : "invalid"
+      className={`${styles.inputLabel} ${
+        input.value !== "" ? styles["focus-within"] : ""
+      } ${
+        input.value === "" ? "" : input.isValid ? styles.valid : styles.invalid
       }`}
     >
       {input.isRequired ? (
         <div>
-          <label htmlFor={input.name} className="label">
+          <label htmlFor={input.name} className={styles.label}>
             {input.label}
             <span
               style={{
-                color: "var(--red)",
+                color: "var(--base-color-rose)",
               }}
             >
               *
@@ -23,7 +26,7 @@ const Input = ({ input }) => {
         </div>
       ) : (
         <div>
-          <label htmlFor={input.name} className="label">
+          <label htmlFor={input.name} className={styles.label}>
             {input.label}
           </label>
           <TextareaAutosize name={input.name} />

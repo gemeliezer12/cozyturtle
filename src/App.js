@@ -9,9 +9,8 @@ import Project from "./Pages/Portfolio/Project";
 import TopNav from "./Components/TopNav";
 import Footer from "./Components/Footer";
 
-import "./styles/lib.css";
-import "./styles/utility.css";
-import "./styles/style.css";
+import "./Styles/globals.css";
+import "./Styles/style.css";
 
 const App = () => {
   return (

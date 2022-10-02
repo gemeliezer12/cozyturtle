@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./ImageSlider.module.css";
 
 const ImageSlider = ({ images }) => {
   const [image, setimage] = useState(0);
@@ -15,7 +16,7 @@ const ImageSlider = ({ images }) => {
   };
 
   const changeImage = (e) => {
-    if (image == e) {
+    if (image === e) {
       setdirection("");
     } else {
       setdirection(e < image ? "left" : "right");
@@ -28,30 +29,29 @@ const ImageSlider = ({ images }) => {
   };
 
   return (
-    <div className="image-slider-container">
+    <div>
       <div
-        className="image-slider"
         style={{
           width: "100%",
           aspectRatio: "16/9",
           position: "relative",
         }}
       >
-        <div className="next">
+        <div className={styles.next}>
           <button
-            className="direction-icon-container"
+            className={styles.directionIconContainer}
             onClick={() => changeImage(image - 1)}
           >
-            <div className="icon"></div>
+            <div className={styles.icon}></div>
           </button>
         </div>
-        <div className="back">
+        <div className={styles.back}>
           <button
-            className="transform-rotate-180deg direction-icon-container"
+            className={styles.directionIconContainer}
             onClick={() => changeImage(image + 1)}
           >
             <div
-              className="icon"
+              className={styles.icon}
               style={{
                 transform: "rotateZ(180deg)",
               }}
@@ -59,7 +59,6 @@ const ImageSlider = ({ images }) => {
           </button>
         </div>
         <div
-          className="images"
           style={{
             width: "100%",
             height: "100%",
@@ -70,12 +69,12 @@ const ImageSlider = ({ images }) => {
           {sliding ? (
             <>
               <img
-                className={`image prev ${direction}`}
+                className={`${styles.image} ${styles.prev} ${styles[direction]}`}
                 src={`../images/${images[prevImage]}`}
                 alt=""
               />
               <img
-                className={`image current ${direction}`}
+                className={`${styles.image} ${styles.current} ${styles[direction]}`}
                 src={`../images/${images[image]}`}
                 alt=""
               />
@@ -83,12 +82,12 @@ const ImageSlider = ({ images }) => {
           ) : (
             <>
               <img
-                className={`image current ${direction}`}
+                className={`${styles.image} ${styles.current} ${styles[direction]}`}
                 src={`../images/${images[image]}`}
                 alt=""
               />
               <img
-                className={`image prev ${direction}`}
+                className={`${styles.image} ${styles.prev} ${styles[direction]}`}
                 src={`../images/${images[prevImage]}`}
                 alt=""
               />
@@ -97,7 +96,6 @@ const ImageSlider = ({ images }) => {
         </div>
       </div>
       <div
-        className="slider-options"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -105,13 +103,13 @@ const ImageSlider = ({ images }) => {
       >
         {images.map((i, index) => (
           <div
-            className={`slider-option-container ${
-              index == image ? "active" : ""
+            className={`${styles.sliderOptionContainer} ${
+              index === image ? styles.active : ""
             }`}
             key={index}
             onClick={() => changeImage(index)}
           >
-            <div className="slider-option" />
+            <div className={styles.sliderOption} />
           </div>
         ))}
       </div>

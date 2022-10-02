@@ -1,13 +1,17 @@
+import styles from "./Input.module.css";
+
 const Input = ({ input }) => {
   return (
     <div
-      className={`input-label ${input.value !== "" && "focus-within"} ${
-        input.value === "" ? "" : input.isValid ? "valid" : "invalid"
+      className={`${styles.inputLabel} ${
+        input.value !== "" && styles["focus-within"]
+      } ${
+        input.value === "" ? "" : input.isValid ? styles.valid : styles.invalid
       }`}
     >
       {input.isRequired ? (
         <div>
-          <label htmlFor={input.name} className="label">
+          <label htmlFor={input.name} className={styles.label}>
             {input.label}
             <span
               style={{
@@ -21,7 +25,7 @@ const Input = ({ input }) => {
         </div>
       ) : (
         <div>
-          <label htmlFor={input.name} className="label">
+          <label htmlFor={input.name} className={styles.label}>
             {input.label}
           </label>
           <input name={input.name} type={input.type} />

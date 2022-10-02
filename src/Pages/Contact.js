@@ -132,6 +132,7 @@ const Contact = () => {
                 fontWeight: "900",
                 color: "var(--text-color-1)",
                 backgroundColor: "var(--base-color-rose)",
+                cursor: "pointer",
               }}
             >
               <p>Cancel</p>
