@@ -97,10 +97,11 @@ const Contact = () => {
         }}
       >
         <div
-          className="I1LR7ekFaW"
           style={{
             display: "flex",
             flexDirection: "column",
+            width: "100%",
+            maxWidth: "500px",
             padding: "80px 32px",
             backgroundColor: "var(--bg-color-2)",
           }}

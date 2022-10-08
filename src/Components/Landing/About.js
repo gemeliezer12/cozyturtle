@@ -35,7 +35,13 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="column gap-10">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "10px",
+        }}
+      >
         <div>
           <p
             className="ff-titan-one fs-32"

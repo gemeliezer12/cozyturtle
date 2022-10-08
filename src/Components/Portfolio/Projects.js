@@ -3,8 +3,9 @@ import Project from "./Project";
 const Projects = ({ projects }) => {
   return (
     <div
-      className="Ykbot8gOoa"
       style={{
+        display: "grid",
+        gridTemplateColumns: "repeat( auto-fill, minmax(250px, 1fr) )",
         paddingTop: "40px",
         gap: "15px",
       }}

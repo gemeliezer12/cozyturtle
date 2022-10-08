@@ -63,7 +63,7 @@ const Main = () => {
             </Link>
             <a
               className="dark"
-              href="resume.pdf"
+              href="Gem's Resume.pdf"
               target="_blank"
               style={{
                 display: "flex",

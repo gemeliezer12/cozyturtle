@@ -108,7 +108,7 @@ const Contact = () => {
                 <p>Contact</p>
               </Link>
               <a
-                href="resume.pdf"
+                href="Gem's Resume.pdf"
                 target="_blank"
                 className="dark"
                 style={{
