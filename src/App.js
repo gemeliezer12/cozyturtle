@@ -11,7 +11,6 @@ import Gallery from "./Pages/Gallery";
 import TopNav from "./Components/TopNav";
 import Footer from "./Components/Footer";
 
-import "./Styles/globals.css";
 import "./Styles/style.css";
 
 const App = () => {
