@@ -6,6 +6,8 @@ import Landing from "./Pages/Landing";
 import Contact from "./Pages/Contact";
 import Portfolio from "./Pages/Portfolio";
 import Project from "./Pages/Portfolio/Project";
+import Gallery from "./Pages/Gallery";
+
 import TopNav from "./Components/TopNav";
 import Footer from "./Components/Footer";
 
@@ -37,6 +39,7 @@ const App = () => {
             <Route path="/" element={<Landing />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route
               path="/portfolio/:currentProjectLinkName"
               element={<Project />}
