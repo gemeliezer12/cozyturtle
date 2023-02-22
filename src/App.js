@@ -11,8 +11,6 @@ import Gallery from "./Pages/Gallery";
 import TopNav from "./Components/TopNav";
 import Footer from "./Components/Footer";
 
-import "./Styles/style.css";
-
 const App = () => {
   return (
     <ThemeProvider>
