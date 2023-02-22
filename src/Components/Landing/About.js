@@ -149,7 +149,7 @@ const About = () => {
               backgroundColor: "var(--base-color-indigo)",
             }}
           >
-            <p>Git</p>
+            <p>MongoDB</p>
           </div>
           <div
             className="dark"
@@ -163,6 +163,19 @@ const About = () => {
             }}
           >
             <p>Postgres</p>
+          </div>
+          <div
+            className="dark"
+            style={{
+              padding: "1px",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+              borderRadius: "4px",
+              fontWeight: "700",
+              backgroundColor: "var(--base-color-indigo)",
+            }}
+          >
+            <p>Git</p>
           </div>
         </div>
       </div>
