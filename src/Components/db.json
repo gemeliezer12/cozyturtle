@@ -1,25 +1,44 @@
 [
-    {
-        "doc": {
-            "name": "Barangay Inhabitant Managment",
-            "description": "A website for Users to manage Barangay Inhabitants.",
-            "details": "Worked as a Full Stack Developer. Creating and Maintaining a website for Users to manage Barangay Inhabitants. Taking care of the Frontend, Backend, API and Database.",
-            "link_name": "barangay_Inhabitant_managment",
-            "categories": [
-                "React/Next JS",
-                "Node JS/Express",
-                "PosgreSQL/Sequelize",
-                "Git/Bitbucket",
-                "Docker"
-            ],
-            "image_slider": [
-                "download1.png",
-                "download2.png",
-                "download3.png",
-                "download4.png"
-            ],
-            "thumbnail": "download1.png"
-        },
-        "id": 1
-    }
+  {
+    "doc": {
+      "name": "Barangay Inhabitant Managment",
+      "description": "A website for Users to manage Barangay Inhabitants.",
+      "details": "Worked as a Full Stack Developer. Creating and Maintaining a website for Users to manage Barangay Inhabitants. Taking care of the Frontend, Backend, API and Database.",
+      "link_name": "barangay_Inhabitant_managment",
+      "categories": [
+        "React/Next JS",
+        "Node JS/Express",
+        "PosgreSQL/Sequelize",
+        "Git/Bitbucket",
+        "Docker"
+      ],
+      "image_slider": [
+        "barangay1.png",
+        "barangay2.png",
+        "barangay3.png",
+        "barangay4.png"
+      ],
+      "thumbnail": "barangay1.png"
+    },
+    "id": 1
+  },
+  {
+    "doc": {
+      "name": "Nimblewaves",
+      "description": "Created the main website for Nimblewaves, and contributed on the other projects of the company",
+      "details": "Actively contributed to the development of a front-end boilerplate utilizing Next.js and leveraging the capabilities of Sanity, a headless CMS, to enable efficient content management and seamless content delivery",
+      "link_name": "nimblewaves",
+      "link": "https://www.nimblewaves.com/",
+      "categories": ["React/Next JS", "Sanity CMS", "Git/Bitbucket"],
+      "image_slider": [
+        "nimblewaves1.png",
+        "nimblewaves2.png",
+        "nimblewaves3.png",
+        "nimblewaves4.png",
+        "nimblewaves5.png"
+      ],
+      "thumbnail": "nimblewaves1.png"
+    },
+    "id": 1
+  }
 ]
